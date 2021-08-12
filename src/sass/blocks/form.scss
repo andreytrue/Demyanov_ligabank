@@ -1,0 +1,110 @@
+.form__item {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: left;
+  position: relative;
+  height: 106px;
+}
+
+.form__item:first-of-type {
+  &:after {
+    position: absolute;
+    content: '';
+    left: 561px;
+    top: 67px;
+    width: 56px;
+    height: 36px;
+    background-image: url('../../img/arrows.svg');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+}
+
+.form__item-label {
+  display: block;
+  width: 216px;
+}
+
+.form__item-input {
+  text-align: center;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 500;
+  height: 20px;
+  width: 300px;
+  padding: 18px 43px;
+  margin: 0;
+  margin-right: 15px;
+}
+
+.form__item-input::-webkit-outer-spin-button,
+.form__item-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.form__item-wrapper {
+  position: relative;
+}
+
+.form__item-calendar {
+  &::-webkit-calendar-picker-indicator {
+    position: absolute;
+    left: 300px;
+    opacity: 1;
+    display: block;
+    background: url('../../img/calendar-icon.svg') no-repeat;
+    width: 39px;
+    height: 42px;
+    border-width: thin;
+  }
+}
+
+.form__currency {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+
+  &:after {
+    position: absolute;
+    content: '';
+    width: 18px;
+    height: 11px;
+    left: 83px;
+    top: 24px;
+    background-image: url('../../img/down-arrow-icon.svg');
+  }
+}
+
+.form__currency-selector {
+  display: block;
+  font-size: 24px;
+  line-height: 42px;
+  padding:  8px;
+  padding-left: 18px;
+  border: 1px solid $text-black;
+  border-radius: 4px;
+  box-sizing: border-box;
+  height: 60px;
+  width: 120px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  appearance: none;
+}
+
+.form__submit {
+  display: block;
+  margin-left: 141px;
+  width: 382px;
+  height: 60px;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 500;
+  border: none;
+  border-radius: 4px;
+  background-color: $branded-blue;
+  color: $light-gray;
+}

@@ -1,0 +1,71 @@
+.promo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 100%;
+  background-image: url('../../img/banner-background.jpg');
+  background-repeat: no-repeat;
+  // background-color: $branded-blue;
+}
+
+.promo__info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-left: 268px;
+  margin-right: 181px;
+}
+
+.promo__header {
+  display: block;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 64px;
+  color: $light-gray;
+  margin: 0;
+}
+
+.promo__text {
+  display: block;
+  font-size: 22px;
+  line-height: 26px;
+  color: $text-gray;
+  margin: 0;
+  margin-top: 25px;
+  margin-bottom: 40px;
+}
+
+.promo__link {
+  padding-top: 19px;
+  padding-bottom: 21px;
+  text-align: center;
+  background-color: $light-gray;
+  border-radius: 4px;
+  margin: 0;
+  width: 234px;
+  cursor: pointer;
+}
+
+.promo__pics {
+  position: relative;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  margin-right: 247px;
+  width: 398px;
+  height: 240px;
+}
+
+.promo__card-white {
+  position: absolute;
+  z-index: 1;
+  left: 94px;
+  bottom: 43px;
+}
+
+.promo__card-black {
+  position: absolute;
+  z-index: 2;
+  top: 58px;
+  right: 78px;
+}

@@ -1,0 +1,26 @@
+// Imports
+@import "./fonts.scss";
+@import './variables.scss';
+@import './blocks/header.scss';
+@import './blocks/promo.scss';
+@import './blocks/converter.scss';
+@import './blocks/form.scss';
+@import './blocks/history.scss';
+@import './blocks/footer.scss';
+@import './blocks/socials.scss';
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.main {
+  width: 1366px;
+}

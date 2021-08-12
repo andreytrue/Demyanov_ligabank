@@ -1,0 +1,47 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  margin: 40px 0;
+}
+
+.header__logo {
+  display: block;
+  margin-top: -10px;
+  margin-left: 98px;
+  margin-bottom: 39px;
+  margin-right: 58px;
+}
+
+.header__list {
+  display: flex;
+  margin: 0;
+  list-style: none;
+}
+
+.header__list-item:not(:last-child) {
+  margin-right: 25px;
+}
+
+.header__list-item--checked {
+  color: $branded-blue;
+}
+
+.header__authorization {
+  margin-left: 140px;
+  margin-right: 97px;
+}
+
+.header__authorization-link {
+  display: block;
+  position: relative;
+
+  &:before {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 22px;
+    top: -3px;
+    left: -28px;
+    background-image: url('../../img/authorization-icon.svg');
+  }
+}
