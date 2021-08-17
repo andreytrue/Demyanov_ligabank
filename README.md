@@ -11,8 +11,6 @@
 
 - Используемый API: [https://exchangerate.host/](https://exchangerate.host/)
 
-![Liga Bank preview image](shorturl.at/xAV03)
-
 ### Доступные команды в проекте:
 
 #### `npm start`
