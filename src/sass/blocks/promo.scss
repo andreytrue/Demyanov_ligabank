@@ -1,7 +1,7 @@
 .promo {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   height: 400px;
   width: 100%;
   background-image: url('../../img/banner-background.jpg');
@@ -15,6 +15,7 @@
   flex-wrap: wrap;
   margin-left: 268px;
   margin-right: 181px;
+  margin-top: 102px;
 }
 
 .promo__header {
@@ -24,6 +25,7 @@
   line-height: 64px;
   color: $light-gray;
   margin: 0;
+  margin-bottom: 7px;
 }
 
 .promo__text {
@@ -32,19 +34,25 @@
   line-height: 26px;
   color: $text-gray;
   margin: 0;
-  margin-top: 25px;
-  margin-bottom: 40px;
+  margin-bottom: 34px;
 }
 
 .promo__link {
-  padding-top: 19px;
-  padding-bottom: 21px;
+  font-size: 18px;
+  padding-top: 17px;
+  padding-bottom: 18px;
   text-align: center;
   background-color: $light-gray;
   border-radius: 4px;
   margin: 0;
   width: 234px;
   cursor: pointer;
+  color: $text-black;
+  text-decoration: none;
+
+  &:hover {
+    background-color: $promo-link-hover;
+  }
 }
 
 .promo__pics {
@@ -59,13 +67,13 @@
 .promo__card-white {
   position: absolute;
   z-index: 1;
-  left: 94px;
-  bottom: 43px;
+  left: 86px;
+  bottom: 31px;
 }
 
 .promo__card-black {
   position: absolute;
   z-index: 2;
-  top: 58px;
-  right: 78px;
+  top: 39px;
+  right: 86px;
 }

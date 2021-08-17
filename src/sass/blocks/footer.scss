@@ -4,10 +4,11 @@
 }
 
 .footer__wrapper {
-  display: flex;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 252px 144px 196px 155px 102px;
+  gap: 80px;
   justify-content: center;
-  padding: 40px 0;
+  padding: 58px 0;
   margin: 0;
 }
 
@@ -18,43 +19,52 @@
   color: #707C87;
   line-height: 17px;
   margin-top: -11px;
-  margin-right: 80px;
 }
 
 .footer__company-info {
   display: block;
   margin: 0;
   padding: 0;
+
+  &:first-of-type {
+    padding-top: 12px;
+  }
 }
 
 .footer__list {
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-right: 80px;
 }
 
-.footer__item {
+.footer__link {
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
   color: $text-black;
+  text-decoration: none;
+
+  &:hover {
+    color: $branded-blue;
+  }
 }
 
 .footer__item:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 8px;
 }
 
 .footer__phone {
   position: relative;
-  margin-right: 80px;
 }
 
 .footer__phone-operator {
+  padding-left: 30px;
+
   &:before {
     position: absolute;
     content: '';
-    left: -18px;
+    top: 2px;
+    left: 1px;
     width: 10px;
     height: 16px;
     background: url('../../img/phone-icon.svg') no-repeat;
@@ -62,10 +72,13 @@
 }
 
 .footer__phone-country {
+  padding-left: 34px;
+
   &:before {
     position: absolute;
     content: '';
-    left: -24px;
+    top: 2px;
+    left: 1px;
     width: 16px;
     height: 16px;
     background: url('../../img/handset-icon.svg') no-repeat;
@@ -88,6 +101,6 @@
   line-height: 16px;
   color: #707C87;
   margin: 0;
-  margin-top: 10px;
+  margin-top: 1px;
   padding: 0;
 }

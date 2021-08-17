@@ -12,13 +12,17 @@
     position: absolute;
     content: '';
     left: 561px;
-    top: 67px;
+    top: 76px;
     width: 56px;
     height: 36px;
     background-image: url('../../img/arrows.svg');
     background-position: 0 0;
     background-repeat: no-repeat;
   }
+}
+
+.form__item-header {
+  font-size: 22px;
 }
 
 .form__item-label {
@@ -31,16 +35,18 @@
   font-size: 24px;
   line-height: 34px;
   font-weight: 500;
-  height: 20px;
   width: 300px;
-  padding: 18px 43px;
-  margin: 0;
-  margin-right: 15px;
+  padding: 12px 43px;
+  margin: 5px 15px 5px 0;
 }
 
-.form__item-input::-webkit-outer-spin-button,
-.form__item-input::-webkit-inner-spin-button {
+.form__item-input {
+  -moz-appearance: textfield;
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-outer-spin-button {
     -webkit-appearance: none;
+  }
 }
 
 .form__item-wrapper {
@@ -48,14 +54,34 @@
 }
 
 .form__item-calendar {
+  margin-top: 0;
+  padding-bottom: 9px;
+
   &::-webkit-calendar-picker-indicator {
     position: absolute;
-    left: 300px;
+    top: 6px;
+    left: 306px;
     opacity: 1;
     display: block;
     background: url('../../img/calendar-icon.svg') no-repeat;
     width: 39px;
     height: 42px;
+    border-width: thin;
+  }
+}
+
+.form__item-calendar--not-chrome {
+  &:after {
+    position: absolute;
+    content: '';
+    z-index: 2;
+    top: 6px;
+    right: 164px;
+    opacity: 1;
+    display: block;
+    background: url('../../img/calendar-icon.svg') no-repeat;
+    width: 42px;
+    height: 45px;
     border-width: thin;
   }
 }
@@ -66,24 +92,26 @@
   margin: 0;
   padding: 0;
   border: none;
+  cursor: pointer;
 
   &:after {
     position: absolute;
     content: '';
     width: 18px;
     height: 11px;
-    left: 83px;
-    top: 24px;
+    left: 86px;
+    top: 30px;
     background-image: url('../../img/down-arrow-icon.svg');
   }
 }
 
 .form__currency-selector {
   display: block;
-  font-size: 24px;
+  font-size: 28px;
   line-height: 42px;
+  margin-top: 5px;
   padding:  8px;
-  padding-left: 18px;
+  padding-left: 16px;
   border: 1px solid $text-black;
   border-radius: 4px;
   box-sizing: border-box;
@@ -93,11 +121,12 @@
   white-space: nowrap;
   text-overflow: ellipsis;
   appearance: none;
+  cursor: pointer;
 }
 
 .form__submit {
   display: block;
-  margin-left: 141px;
+  margin-left: 143px;
   width: 382px;
   height: 60px;
   font-size: 18px;
@@ -107,4 +136,9 @@
   border-radius: 4px;
   background-color: $branded-blue;
   color: $light-gray;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $branded-blue-hover;
+  }
 }
